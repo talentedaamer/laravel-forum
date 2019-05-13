@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8f8c97c-713e-4e85-a744-67bbb6a70fa5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/questions/index.blade.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,6 +43,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="laravel_forum: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="laravel_forum@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="laravel_forum: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="questions: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -57,16 +64,6 @@
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2019_05_13_183240_create_questions_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_13_183240_create_questions_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -91,30 +88,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users" pinned="false" current-in-tab="false">
-        <entry file="das://table:/21279a3b/9758a301-dc57-42e1-a0c5-d8aa05a97e4a/laravel_forum.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="questions" pinned="false" current-in-tab="true">
-        <entry file="das://table:/21279a3b/9758a301-dc57-42e1-a0c5-d8aa05a97e4a/laravel_forum.questions">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/factories/QuestionFactory.php">
+      <file leaf-file-name="QuestionsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="242">
+              <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+              <folding>
+                <element signature="e#139#240#0#PHP" expanded="false" />
+                <element signature="e#440#549#0#PHP" expanded="false" />
+                <element signature="e#554#601#0#PHP" expanded="false" />
+                <element signature="e#607#766#0#PHP" expanded="false" />
+                <element signature="e#771#833#0#PHP" expanded="false" />
+                <element signature="e#839#977#0#PHP" expanded="false" />
+                <element signature="e#982#1045#0#PHP" expanded="false" />
+                <element signature="e#1051#1207#0#PHP" expanded="false" />
+                <element signature="e#1212#1275#0#PHP" expanded="false" />
+                <element signature="e#1281#1479#0#PHP" expanded="false" />
+                <element signature="e#1484#1567#0#PHP" expanded="false" />
+                <element signature="e#1573#1723#0#PHP" expanded="false" />
+                <element signature="e#1728#1794#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/questions/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <marker date="1557776412262" expanded="true" signature="9:22" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="34:43" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="90:115" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="247:263" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="333:349" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="421:439" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="467:485" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="650:686" ph="..." />
+                <marker date="1557776412262" expanded="true" signature="803:822" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,6 +148,9 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/factories/QuestionFactory.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/questions/index.blade.php" />
       </list>
     </option>
   </component>
@@ -267,6 +283,19 @@
             <path>
               <item name="laravel-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-forum" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -280,6 +309,17 @@
               <item name="laravel-forum" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="seeds" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-forum" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -320,12 +360,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557770937641</updated>
-      <workItem from="1557770938842" duration="3310000" />
+      <workItem from="1557770938842" duration="4643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3310000" />
+    <option name="totallyTimeSpent" value="4643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1595" height="953" extended-state="0" />
@@ -340,7 +380,7 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24983902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296845" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296845" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -420,7 +460,7 @@
         <state relative-caret-position="22">
           <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding>
-            <element signature="e#66#79#0#PHP" expanded="true" />
+            <element signature="e#66#79#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -446,7 +486,7 @@
         <state relative-caret-position="376">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
+            <element signature="e#23#62#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -478,6 +518,67 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1557771463129" expanded="true" signature="9:22" ph="..." />
+            <marker date="1557771463129" expanded="true" signature="34:43" ph="..." />
+            <marker date="1557771463129" expanded="true" signature="299:316" ph="..." />
+            <marker date="1557771463129" expanded="true" signature="419:438" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/QuestionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="e#139#240#0#PHP" expanded="false" />
+            <element signature="e#440#549#0#PHP" expanded="false" />
+            <element signature="e#554#601#0#PHP" expanded="false" />
+            <element signature="e#607#766#0#PHP" expanded="false" />
+            <element signature="e#771#833#0#PHP" expanded="false" />
+            <element signature="e#839#977#0#PHP" expanded="false" />
+            <element signature="e#982#1045#0#PHP" expanded="false" />
+            <element signature="e#1051#1207#0#PHP" expanded="false" />
+            <element signature="e#1212#1275#0#PHP" expanded="false" />
+            <element signature="e#1281#1479#0#PHP" expanded="false" />
+            <element signature="e#1484#1567#0#PHP" expanded="false" />
+            <element signature="e#1573#1723#0#PHP" expanded="false" />
+            <element signature="e#1728#1794#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/questions/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <marker date="1557776412262" expanded="true" signature="9:22" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="34:43" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="90:115" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="247:263" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="333:349" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="421:439" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="467:485" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="650:686" ph="..." />
+            <marker date="1557776412262" expanded="true" signature="803:822" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
