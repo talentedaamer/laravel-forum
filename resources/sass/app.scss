@@ -6,3 +6,17 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.q-status {
+  .q-status-views {}
+  .q-status-votes {}
+  .q-status-ans {}
+  .badge-md {
+    min-width: 80px;
+  }
+}
+
+.badge-md {
+  padding: .3125em .625em;
+  font-size: .75em;
+}
