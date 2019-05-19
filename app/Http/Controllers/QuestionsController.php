@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Question;
 use Illuminate\Http\Request;
+use App\Http\Requests\QuestionsRequest;
 
 class QuestionsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index', 'show');
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -29,7 +35,7 @@ class QuestionsController extends Controller
      */
     public function create()
     {
-        //
+        return view( 'questions.create' );
     }
 
     /**
@@ -38,9 +44,15 @@ class QuestionsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(QuestionsRequest $request)
     {
-        //
+        $request->user()
+                ->questions()
+                ->create($request->only('title', 'body'));
+    
+        return redirect()
+            ->route('questions.index')
+            ->with('success', 'Question has been added successfully !');
     }
 
     /**
@@ -51,7 +63,16 @@ class QuestionsController extends Controller
      */
     public function show(Question $question)
     {
-        //
+        $questions = Question::inRandomOrder()
+                             ->limit(5)
+                             ->get();
+        
+        $question->increment('views');
+        
+        return view( 'questions.show', [
+            'question' => $question,
+            'questions' => $questions
+        ] );
     }
 
     /**
@@ -62,7 +83,10 @@ class QuestionsController extends Controller
      */
     public function edit(Question $question)
     {
-        //
+        $this->authorize( 'update', $question );
+        return view( 'questions.edit', [
+            'question' => $question
+        ] );
     }
 
     /**
@@ -72,9 +96,14 @@ class QuestionsController extends Controller
      * @param  \App\Question  $question
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Question $question)
+    public function update(QuestionsRequest $request, Question $question)
     {
-        //
+        $this->authorize( 'update', $question );
+        $question->update( $request->only( 'title', 'body' ) );
+    
+        return redirect()
+            ->route('questions.index')
+            ->with('success', 'Question has been updated successfully !');
     }
 
     /**
@@ -85,6 +114,11 @@ class QuestionsController extends Controller
      */
     public function destroy(Question $question)
     {
-        //
+        $this->authorize( 'delete', $question );
+        $question->delete();
+    
+        return redirect()
+            ->route('questions.index')
+            ->with('success', 'Question has been deleted successfully !');
     }
 }

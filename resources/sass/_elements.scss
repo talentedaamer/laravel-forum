@@ -1,0 +1,49 @@
+.q-status {
+  .q-status-views {}
+  .q-status-votes {}
+  .q-status-ans {}
+  .badge-md {
+    min-width: 80px;
+  }
+}
+
+.badge-md {
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.q-status {
+  .badge-md {
+    min-width: 80px;
+
+    &.is-ansed {
+      border-color: #45A163;
+      color: #45A163;
+    }
+    &.ans-is-accepted {
+      border-color: transparent;
+      background-color: #45A163;
+      color: #ffffff;
+    }
+
+    &.no-votes {}
+    &.has-votes {
+      border-color: #3490dc;
+      color: #3490dc;
+    }
+    &.neg-votes {
+      border-color: transparent;
+      background-color: #e3342f;
+      color: #ffffff;
+    }
+
+    &.no-views {}
+    &.has-views {
+      border-color: #3490dc;
+      color: #3490dc;
+    }
+  }
+}

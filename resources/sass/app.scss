@@ -1,22 +1,59 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+// icon fonts
+@import 'icons';
+
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.q-status {
-  .q-status-views {}
-  .q-status-votes {}
-  .q-status-ans {}
-  .badge-md {
-    min-width: 80px;
+// custom elements
+@import "elements";
+
+a, a:hover, a:focus, a:active, a.active {
+  text-decoration: none;
+  outline: none;
+}
+.questions-area {
+  .question {
+    .question-info {
+      .q-votes {
+        .has-votes {
+          color: $success;
+        }
+        .neg-votes {
+          color: $danger;
+        }
+      }
+    }
+    .question-content {
+      .question-meta {
+        background-color: #f0f0f0;
+        //color: $light;
+      }
+    }
   }
 }
 
-.badge-md {
-  padding: .3125em .625em;
-  font-size: .75em;
+.sidebar-area {
+  .sidebar-widge {
+  }
+  .related-questions {
+    .relate-q-item {
+      .ans {
+        .is-ansed {
+          border-color: #45A163;
+          color: #45A163;
+        }
+        .ans-is-accepted {
+          border-color: transparent;
+          background-color: #45A163;
+          color: #ffffff;
+        }
+      }
+    }
+  }
 }
