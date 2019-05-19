@@ -71,6 +71,6 @@ class Question extends Model
     
     public function answers()
     {
-        return $this->hasCast('App\Answer');
+        return $this->hasMany('App\Answer');
     }
 }
