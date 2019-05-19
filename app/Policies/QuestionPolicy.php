@@ -31,8 +31,8 @@ class QuestionPolicy
      */
     public function delete(User $user, Question $question)
     {
-        // also check if there are more than 1 answers
-        return $user->id == $question->user_id && $question->answers < 1;
+        // also check if there are more than 1 answers_count
+        return $user->id == $question->user_id && $question->answers_count < 1;
     }
 
     /**

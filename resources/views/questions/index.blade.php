@@ -23,7 +23,7 @@
                         <span class="badge badge-primary badge-md {{ $question->ViewStatus }}">{{$question->views}} <span class="d-block">{{ Str::plural( 'View', $question->views) }}</span></span>
                     </li>
                     <li class="q-status-ans list-inline-item">
-                        <span class="badge badge-secondary badge-md {{ $question->status }}">{{$question->answers}} <span class="d-block">{{ Str::plural( 'Answer', $question->answers) }}</span></span>
+                        <span class="badge badge-secondary badge-md {{ $question->status }}">{{$question->answers_count}} <span class="d-block">{{ Str::plural( 'Answer', $question->answers_count) }}</span></span>
                     </li>
                 </ul>
                 <p class="d-inline-block mb-0">Asked By <a href="{{ $question->user->url }}">{{ $question->user->name }}</a> - {{ $question->created_date }}</p>
